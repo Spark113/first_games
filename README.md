@@ -6,7 +6,7 @@ This repository contains two simple console games written in C# as a learning ex
 
 ### Flappy Bird Clone
 
-In this mode the player controls a bird that must fly between pairs of pipes scrolling from right to left.  The bird is drawn using an `MTP` object, while the pipes are represented by `TRect` rectangles.  The game loop repeatedly moves the pipes, checks for collisions and updates the score when the bird successfully passes through a gap【937743752795525†screenshot】.  The player presses a key to make the bird “flap” upward, while gravity pulls it downward.  If the bird hits a pipe or the ground, the game ends.
+In this mode the player controls a bird that must fly between pairs of pipes scrolling from right to left.  The bird is drawn using an `MTP` object, while the pipes are represented by `TRect` rectangles.  The game loop repeatedly moves the pipes, checks for collisions and updates the score when the bird successfully passes through a gap.  The player presses a key to make the bird “flap” upward, while gravity pulls it downward.  If the bird hits a pipe or the ground, the game ends.
 
 ### Island Game
 
@@ -14,9 +14,9 @@ The second option is a small “island” game (named `iland` in the code).  It 
 
 ## Code Structure
 
-* **`TRect.cs`** defines a rectangle with properties for position, width, height and colour, along with methods to set and draw itself on the console【188624621155914†screenshot】.
+* **`TRect.cs`** defines a rectangle with properties for position, width, height and colour, along with methods to set and draw itself on the console.
 * **`MTP.cs`** defines a moving text point class used to represent moving objects like the bird.  It holds the x/y coordinates and the character to display.
-* **`Program.cs`** contains the `Main` method.  It displays a prompt asking the user to enter `0` for Flappy Bird or `1` for the island game and then calls the corresponding function【937743752795525†screenshot】.  The game loop for Flappy Bird creates random pipes, moves them across the screen and updates the bird’s position based on user input【707278586481032†screenshot】.
+* **`Program.cs`** contains the `Main` method.  It displays a prompt asking the user to enter `0` for Flappy Bird or `1` for the island game and then calls the corresponding function.  The game loop for Flappy Bird creates random pipes, moves them across the screen and updates the bird’s position based on user input.
 
 ## Building and Running
 
